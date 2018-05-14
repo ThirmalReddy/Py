@@ -1,0 +1,12 @@
+def convert(temp,unit):
+    unit=unit.lower()
+    if unit=='c':
+        temp=9.0/5.0*temp+32
+        return "%s degree fahrenheit"%temp
+    if unit=='f':
+        temp=(temp-32)/9.0*5.0
+        return "%s degree celcius"%temp
+temp_in=int(input("Please enter the temparature ?\n"))
+unit_in=str(input("Please enter the units -\n"))
+
+print(convert(temp_in,unit_in))
